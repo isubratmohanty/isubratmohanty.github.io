@@ -7,16 +7,16 @@ function formatTime() {
 }
 
 const LOG_LINES = [
-  { prefix: '[SRE]', msg: '70+ incidents handled · MTTR reduced ~60%', level: 'OK' },
-  { prefix: '[ML]', msg: '500+ training runs/mo · CPU + GPU healthy', level: 'OK' },
-  { prefix: '[CD]', msg: '100+ ECS/EC2 deployments/mo · pipelines green', level: 'OK' },
+  { prefix: '[SRE]', msg: 'SLI/SLO checks · escalation paths ready', level: 'OK' },
+  { prefix: '[ML]', msg: 'CPU + GPU training workflows healthy', level: 'OK' },
+  { prefix: '[CD]', msg: 'ECS/EC2 delivery pipelines green', level: 'OK' },
   { prefix: '[TMP]', msg: 'Temporal workflows · retries + recovery active', level: 'OK' },
-  { prefix: '[BAT]', msg: 'AWS Batch peak · 20–30 concurrent CPU jobs', level: 'OK' },
-  { prefix: '[VPN]', msg: '~20 internal apps moved to private access', level: 'OK' },
-  { prefix: '[SEC]', msg: '50–60 repos protected · High/Critical gates active', level: 'OK' },
+  { prefix: '[BAT]', msg: 'AWS Batch queues · asynchronous work active', level: 'OK' },
+  { prefix: '[VPN]', msg: 'Private application access · SSO controls active', level: 'OK' },
+  { prefix: '[SEC]', msg: 'High/Critical release gates active', level: 'OK' },
   { prefix: '[OBS]', msg: 'ELK telemetry · infrastructure visibility online', level: 'OK' },
-  { prefix: '[AWS]', msg: 'Infrastructure spend reduced 30–40%', level: 'OK' },
-  { prefix: '[OPS]', msg: '15+ engineering tools · automation operational', level: 'OK' },
+  { prefix: '[AWS]', msg: 'Capacity and lifecycle controls monitored', level: 'OK' },
+  { prefix: '[OPS]', msg: 'Engineering automation operational', level: 'OK' },
 ];
 
 const CYCLE_MS = 2800;

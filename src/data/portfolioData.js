@@ -1,5 +1,5 @@
 export const PORTFOLIO_METRICS = [
-  { value: '60%', label: 'lower MTTR' },
+  { value: '~60%', label: 'MTTR improvement' },
   { value: '~60', label: 'services owned' },
   { value: '500+', label: 'ML runs per month' },
   { value: '100+', label: 'deployments per month' },
@@ -131,6 +131,7 @@ export const TOPOLOGY = [
 export const AI_SYSTEMS = [
   {
     id: 'log-agent',
+    status: 'Internal engineering system',
     eyebrow: 'Operations intelligence',
     title: 'AI-agent log analysis',
     description:
@@ -141,6 +142,7 @@ export const AI_SYSTEMS = [
   },
   {
     id: 'incident-rag',
+    status: 'Internal decision-support tool',
     eyebrow: 'Predictive guidance',
     title: 'RAG incident pattern system',
     description:
@@ -151,6 +153,7 @@ export const AI_SYSTEMS = [
   },
   {
     id: 'security-agent',
+    status: 'Production CI/CD integration',
     eyebrow: 'DevSecOps at scale',
     title: 'AI security & code-quality platform',
     description:
@@ -161,6 +164,7 @@ export const AI_SYSTEMS = [
   },
   {
     id: 'database-agent',
+    status: 'Internal engineering platform',
     eyebrow: 'Data operations',
     title: 'Database comparison & replication',
     description:

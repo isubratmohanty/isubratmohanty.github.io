@@ -5,11 +5,11 @@ import './Nav.css';
 
 const LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Environment', href: '#environment' },
-  { label: 'AI Systems', href: '#ai-systems' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'AI Systems', href: '#ai-systems' },
+  { label: 'Environment', href: '#environment' },
   { label: 'Contact', href: '#contact' },
 ];
 

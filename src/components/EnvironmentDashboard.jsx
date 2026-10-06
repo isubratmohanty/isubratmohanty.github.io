@@ -130,18 +130,18 @@ export default function EnvironmentDashboard() {
     >
       <div className="environment__heading">
         <div>
-          <p className="section-title">Environment command center</p>
+          <p className="section-title">SRE dashboard design exercise</p>
           <h2 className="section-heading">How I reason about production health</h2>
           <p className="environment__intro">
-            A representative SRE dashboard modeled on the signals, workloads, and operational
-            responsibilities described in my resume.
+            An illustrative interface showing how I organize RED, USE, delivery, ML operations,
+            and incident-response signals. It is not production telemetry.
           </p>
         </div>
         <div className="environment__disclaimer">
           <span className="environment__disclaimer-dot" />
           <div>
-            <strong>Sanitized demo snapshot</strong>
-            <span>Deterministic sample data · no employer systems connected</span>
+            <strong>Fictional design exercise</strong>
+            <span>Deterministic sample values · no employer systems connected</span>
           </div>
         </div>
       </div>

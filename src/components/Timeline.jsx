@@ -4,27 +4,11 @@ import './Timeline.css';
 const MILESTONES = [
   {
     year: '2024 — Present',
-    title: 'Site Reliability & Engineering Leadership',
+    title: 'Site Reliability Engineer',
     company: 'DataPoem',
     description:
-      'Own reliability across 4+ AWS environments and approximately 60 services while leading 4–5 engineers. Define SLI/SLO monitoring, lead critical escalations, and drive RCA, postmortems, runbooks, mentoring, performance reviews, and hiring.',
-    highlights: ['70+ escalations', 'MTTR ↓60%', '~60 services', 'Lead 4–5 engineers'],
-  },
-  {
-    year: '2024 — Present',
-    title: 'ML Platform & Release Engineering',
-    company: 'DataPoem',
-    description:
-      'Operate 500+ monthly ML training runs across SageMaker, Temporal, and AWS Batch. Support 100+ ECS/EC2 deployments per month using Jenkins, GitHub Actions, Lambda guardrails, and secure multi-stage, non-root containers.',
-    highlights: ['500+ ML runs/mo', '100+ deploys/mo', 'SageMaker + Batch', 'Temporal workflows'],
-  },
-  {
-    year: '2024 — Present',
-    title: 'Private Cloud Access, Security & Cost',
-    company: 'DataPoem',
-    description:
-      'Implemented AWS Client VPN with Entra ID SSO and moved approximately 20 internal applications from public access to private connectivity. Reduced AWS infrastructure costs by 30–40%, negotiated approximately 15% overall commercial discount, and own BCP/DR and compliance support.',
-    highlights: ['~20 apps privatized', 'AWS cost ↓30–40%', '~15% AWS discount', 'BCP/DR'],
+      'Own reliability across 4+ AWS environments and approximately 60 services while providing technical leadership to 4–5 engineers. Operate ML training and release platforms, lead production escalations, and contributed to approximately 60% lower MTTR through SLOs, RCA, observability, runbooks, and process improvements. Delivered private application access, security controls, BCP/DR support, and cloud cost optimization.',
+    highlights: ['70+ escalations', '500+ ML runs/mo', '100+ deploys/mo', 'AWS cost ↓30–40%'],
   },
   {
     year: '2023 — 2024',
@@ -39,15 +23,15 @@ const MILESTONES = [
     title: 'Senior Infrastructure Developer',
     company: 'Cognizant',
     description:
-      'Maintained shared production infrastructure with high availability and compliance. Standardized AMI & Docker image pipelines, reducing environment drift by 40%. Automated vulnerability patching. Improved CI/CD reliability by 30%.',
-    highlights: ['Infra drift ↓40%', 'CI/CD ↑30%', '100% security compliance', 'Sprint Award ×2'],
+      'Maintained shared production infrastructure focused on availability, security, and compliance. Standardized AMI and Docker image pipelines, reducing environment drift by approximately 40%; automated vulnerability patching and improved deployment consistency.',
+    highlights: ['Infra drift ↓40%', 'Automated patching', 'Standardized images', 'Sprint Award ×2'],
   },
   {
     year: '2020 — 2021',
     title: 'DevOps Engineer',
     company: 'IBM',
     description:
-      'Automated AWS provisioning with Ansible, cutting setup time by 50%. Built Jenkins + Maven pipelines, increasing release frequency by 35%. Implemented Nagios monitoring achieving 99.9% uptime. Containerized workloads with Docker and K8s.',
+      'Automated AWS provisioning with Ansible, cutting setup time by approximately 50%. Built Jenkins and Maven pipelines that increased release frequency by approximately 35%, implemented Nagios monitoring for systems operating at 99.9% uptime, and supported Docker/Kubernetes workloads.',
     highlights: ['Setup time ↓50%', '99.9% uptime', 'Release freq ↑35%', 'Docker + K8s'],
   },
 ];

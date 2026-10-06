@@ -1,6 +1,6 @@
 import { useInView } from '../hooks/useInView';
 import { useTilt } from '../hooks/useTilt';
-import { FiDatabase, FiShield, FiServer, FiDollarSign, FiLock, FiHardDrive, FiGitBranch, FiLayers } from 'react-icons/fi';
+import { FiDatabase, FiShield, FiDollarSign, FiLock, FiLayers } from 'react-icons/fi';
 import './Projects.css';
 
 const PROJECTS = [
@@ -14,27 +14,18 @@ const PROJECTS = [
     status: 'Shipped',
   },
   {
-    title: 'DOS Attack Response & Security Hardening',
+    title: 'Security Incident Response & Hardening',
     description:
-      'Responded to a live attack on public-facing databases. Overnight: blocked malicious network ranges, migrated databases to private subnets, updated all application configs, rotated credentials. Documented as security incident. Zero data loss.',
+      'Responded to malicious traffic affecting a public data endpoint and led containment, network blocking, credential rotation, application configuration updates, and migration to private connectivity with no data loss.',
     tags: ['Incident Response', 'Security', 'Networking', 'AWS'],
     icon: FiShield,
     color: '#f87171',
     status: 'Incident resolved',
   },
   {
-    title: 'BCP/DR Strategy & Automated Testing',
-    description:
-      'Designed the full BCP/DR structure for DataPoem. Built Jenkins jobs with parameters to test both BCP and DR on demand. Created AMI backups of all critical servers with cross-region replication. Achieved 100% audit pass rate for ISO 27001 & SOC2.',
-    tags: ['BCP/DR', 'Jenkins', 'ISO 27001', 'SOC2'],
-    icon: FiServer,
-    color: '#3b82f6',
-    status: 'Shipped',
-  },
-  {
     title: 'AWS Cost Optimization — 30–40% cost reduction',
     description:
-      'Reduced AWS infrastructure expenditure by 30–40% through rightsizing, workload optimization, unused-resource cleanup, and lifecycle controls. Negotiated commercial terms providing approximately 15% overall AWS discount.',
+      'Contributed to a 30–40% reduction in AWS infrastructure expenditure through rightsizing, workload optimization, unused-resource cleanup, and lifecycle controls.',
     tags: ['Cost Optimization', 'EC2', 'S3', 'Jenkins'],
     icon: FiDollarSign,
     color: '#f59e0b',
@@ -47,24 +38,6 @@ const PROJECTS = [
     tags: ['AWS Client VPN', 'Entra ID', 'VPC', 'Security'],
     icon: FiLock,
     color: '#a855f7',
-    status: 'Shipped',
-  },
-  {
-    title: '35TB Cross-Account Data Migration',
-    description:
-      'Migrated 35TB from client S3 buckets to DataPoem infrastructure. Built Python scripts for fast, secure, parallel transfers. Optimized for cost and throughput. Handled multiple data movement tasks across client engagements.',
-    tags: ['Python', 'S3', 'Data Migration', 'AWS'],
-    icon: FiHardDrive,
-    color: '#14b8a6',
-    status: 'Shipped',
-  },
-  {
-    title: 'Environment Stabilization & Branching Strategy',
-    description:
-      'When I joined, something broke almost daily. Segregated environments, separated database connections, tuned CPU/memory, protected branches with approval gates. Standardized branching: qa → integration → preproduction → production across all repos.',
-    tags: ['DevOps', 'Git', 'ECS', 'CI/CD'],
-    icon: FiGitBranch,
-    color: '#06b6d4',
     status: 'Shipped',
   },
   {
@@ -119,8 +92,8 @@ export default function Projects() {
       <p className="section-title">Projects</p>
       <h2 className="section-heading">Production problems I've solved</h2>
       <p className="projects__intro">
-        Each project addressed a real production challenge -- security incidents,
-        cost overruns, broken environments, manual processes -- with measurable outcomes.
+        Five selected examples of production work across reliability, security, performance,
+        cloud efficiency, and ML platform operations.
       </p>
       <ul className="projects__grid">
         {PROJECTS.map((project, i) => (

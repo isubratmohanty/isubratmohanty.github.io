@@ -4,11 +4,11 @@ import './CommandPalette.css';
 
 const SECTIONS = [
   { id: 'about', label: 'Go to About', icon: '>' },
-  { id: 'environment', label: 'Go to Environment Dashboard', icon: '>' },
-  { id: 'ai-systems', label: 'Go to AI Systems', icon: '>' },
   { id: 'experience', label: 'Go to Experience', icon: '>' },
-  { id: 'skills', label: 'Go to Skills', icon: '>' },
   { id: 'projects', label: 'Go to Projects', icon: '>' },
+  { id: 'skills', label: 'Go to Skills', icon: '>' },
+  { id: 'ai-systems', label: 'Go to AI Systems', icon: '>' },
+  { id: 'environment', label: 'Go to Environment Dashboard', icon: '>' },
   { id: 'contact', label: 'Go to Contact', icon: '>' },
 ];
 

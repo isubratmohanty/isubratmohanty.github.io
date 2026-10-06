@@ -27,11 +27,11 @@ function App() {
       <main id="main-content">
         <Hero />
         <About />
-        <EnvironmentDashboard />
-        <AIAchievements />
         <Timeline />
-        <Skills />
         <Projects />
+        <Skills />
+        <AIAchievements />
+        <EnvironmentDashboard />
         <Contact />
       </main>
       <Footer />

@@ -20,7 +20,7 @@ function AISystemCard({ system, index }) {
       <div className="ai-system__topline">
         <div className="ai-system__icon"><Icon aria-hidden /></div>
         <span className="ai-system__status">
-          <span /> Production application
+          <span /> {system.status}
         </span>
       </div>
       <span className="ai-system__number">{String(index + 1).padStart(2, '0')}</span>
@@ -38,7 +38,7 @@ function AISystemCard({ system, index }) {
       </div>
 
       <div className="ai-system__proof">
-        <span>Evidence</span>
+        <span>Scope / outcome</span>
         <p>{system.proof}</p>
       </div>
 
@@ -60,7 +60,7 @@ export default function AIAchievements() {
     >
       <div className="ai-achievements__heading">
         <div>
-          <p className="section-title">Production AI engineering</p>
+          <p className="section-title">Operational AI engineering</p>
           <h2 className="section-heading">AI systems built for operational outcomes</h2>
         </div>
         <p>

@@ -7,10 +7,7 @@ import './Hero.css';
 const ROLES = [
   'Site Reliability Engineer',
   'Senior DevOps Engineer',
-  'ML Platform Reliability Engineer',
   'Cloud Platform Engineer',
-  'DevSecOps Engineer',
-  'Cloud Infrastructure Engineer',
 ];
 
 export default function Hero() {
@@ -36,8 +33,8 @@ export default function Hero() {
         </p>
         <p className="hero__tagline hero__anim hero__anim--4">
           6+ years building and operating <em>production platforms</em> on AWS —
-          reliability, ML infrastructure, automation, security & cost efficiency.
-          70+ incidents handled. 500+ ML training runs and 100+ deployments each month.
+          focused on reliability, ML infrastructure, incident response, secure delivery,
+          automation, and cost efficiency.
         </p>
         <div className="hero__pill-strip hero__anim hero__anim--4b" aria-label="Key metrics">
           {PORTFOLIO_METRICS.map((metric, index) => (
