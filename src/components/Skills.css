@@ -1,0 +1,134 @@
+.skills {
+  max-width: none;
+  background: var(--bg-elevated);
+  padding: 5rem 1.5rem;
+}
+
+.skills__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Filter tabs ── */
+.skills__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skills__filter:hover {
+  border-color: var(--accent-border-hover);
+  color: var(--accent);
+}
+
+.skills__filter--active {
+  background: var(--accent);
+  color: var(--bg-deep);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.skills__filter--active:hover {
+  color: var(--bg-deep);
+}
+
+.skills__filter-count {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Skill items ── */
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skills__item:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.skills__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+  transition: transform 0.25s ease;
+}
+
+.skills__item:hover .skills__icon {
+  transform: scale(1.2);
+}
+
+.skills__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.skills__name {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.skills__category {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills__item:hover {
+    transform: none;
+  }
+  .skills__item:hover .skills__icon {
+    transform: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills__list {
+    grid-template-columns: 1fr;
+  }
+}

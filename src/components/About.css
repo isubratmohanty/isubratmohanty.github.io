@@ -1,0 +1,234 @@
+.about {
+  padding-top: 5rem;
+}
+
+/* ── Intro with photo ── */
+.about__intro {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.about__photo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.about__photo-placeholder,
+.about__photo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.about__photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.about__photo-img {
+  display: block;
+  z-index: 1;
+}
+
+.about__intro-text p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+  max-width: 600px;
+}
+
+.about__intro-text strong {
+  color: var(--text);
+}
+
+.about__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.about__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+}
+
+.about__location svg {
+  color: var(--accent);
+}
+
+.about__availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--success);
+}
+
+.about__avail-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+  animation: aboutPulse 2s ease infinite;
+}
+
+@keyframes aboutPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ── Stats strip ── */
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.about__stat-icon {
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.about__stat-number {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.about__stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Card grid ── */
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.about__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about__card:hover {
+  border-color: var(--accent-border-hover);
+  box-shadow: 0 8px 40px var(--accent-glow);
+}
+
+.about__card:hover::before {
+  opacity: 1;
+}
+
+.about__icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-glow);
+  margin-bottom: 1rem;
+}
+
+.about__icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.about__card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+
+.about__card p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .about__intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__meta {
+    justify-content: center;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about__card:hover {
+    transform: none;
+  }
+  .about__avail-dot {
+    animation: none;
+  }
+}

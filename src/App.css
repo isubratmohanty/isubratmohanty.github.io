@@ -1,0 +1,4 @@
+/* App-level layout (Nav + main already styled in index.css / components) */
+main {
+  padding: 0;
+}

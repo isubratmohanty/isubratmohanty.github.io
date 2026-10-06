@@ -1,0 +1,48 @@
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    transition: opacity 0.2s ease;
+  }
+  .back-to-top:hover {
+    transform: none;
+  }
+}
