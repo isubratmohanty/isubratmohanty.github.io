@@ -6,10 +6,11 @@ import './Hero.css';
 
 const ROLES = [
   'Site Reliability Engineer',
+  'Senior DevOps Engineer',
   'ML Platform Reliability Engineer',
   'Cloud Platform Engineer',
-  'Incident Commander',
-  'Engineering Team Lead',
+  'DevSecOps Engineer',
+  'Cloud Infrastructure Engineer',
 ];
 
 export default function Hero() {
