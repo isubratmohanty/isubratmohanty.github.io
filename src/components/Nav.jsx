@@ -4,7 +4,6 @@ import ThemeToggle from './ThemeToggle';
 import './Nav.css';
 
 const LINKS = [
-  { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },

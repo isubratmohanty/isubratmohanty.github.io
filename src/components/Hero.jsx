@@ -1,6 +1,6 @@
 import { useTypingEffect } from '../hooks/useTypingEffect';
 import { PORTFOLIO_METRICS } from '../data/portfolioData';
-import TerminalLogs from './TerminalLogs';
+import { FiMapPin } from 'react-icons/fi';
 import ParticleNetwork from './ParticleNetwork';
 import './Hero.css';
 
@@ -22,6 +22,9 @@ export default function Hero() {
           <span className="hero__badge-dot" />
           Available for opportunities
         </div>
+        <div className="hero__profile-photo hero__anim hero__anim--2">
+          <img src="/photo.jpg" alt="Subrat Mohanty" />
+        </div>
         <h1 className="hero__name hero__anim hero__anim--2">
           <span className="hero__greeting-text">Hi, I'm </span>
           <span className="hero__name-gradient">Subrat Mohanty</span>
@@ -36,6 +39,15 @@ export default function Hero() {
           focused on reliability, ML infrastructure, incident response, secure delivery,
           automation, and cost efficiency.
         </p>
+        <p className="hero__bio hero__anim hero__anim--4">
+          At DataPoem, I combine hands-on platform ownership with technical leadership across
+          incident response, secure delivery, and automation. Earlier experience includes
+          independent consulting, Cognizant, and IBM.
+        </p>
+        <div className="hero__meta hero__anim hero__anim--4b">
+          <span><FiMapPin aria-hidden /> Bengaluru, India</span>
+          <span>SRE · DevOps · Cloud Platform</span>
+        </div>
         <div className="hero__pill-strip hero__anim hero__anim--4b" aria-label="Key metrics">
           {PORTFOLIO_METRICS.map((metric, index) => (
             <span className="hero__pill" key={metric.label}>
@@ -67,7 +79,6 @@ export default function Hero() {
         <p className="hero__hint hero__anim hero__anim--6">
           Press <kbd>{typeof navigator !== 'undefined' && /Mac|iPad|iPhone/i.test(navigator.platform) ? '⌘' : 'Ctrl'}</kbd> + <kbd>K</kbd> to navigate
         </p>
-        <TerminalLogs />
       </div>
     </header>
   );

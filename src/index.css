@@ -166,8 +166,7 @@ body.light .env-panel,
 body.light .env-controls,
 body.light .ai-system,
 body.light .skills__item,
-body.light .timeline__card,
-body.light .terminal-logs {
+body.light .timeline__card {
   box-shadow: var(--card-shadow);
 }
 
@@ -186,11 +185,6 @@ body.light .hero__bg {
   background:
     radial-gradient(ellipse 80% 50% at 50% -20%, var(--accent-glow), transparent),
     linear-gradient(180deg, transparent 60%, var(--bg-deep) 100%);
-}
-
-/* Light mode terminal bar */
-body.light .terminal-logs__bar {
-  background: #e8edf2;
 }
 
 /* Light mode skills section bg */

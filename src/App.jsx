@@ -4,7 +4,6 @@ import ScrollProgress from './components/ScrollProgress';
 import CommandPalette from './components/CommandPalette';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import About from './components/About';
 import EnvironmentDashboard from './components/EnvironmentDashboard';
 import AIAchievements from './components/AIAchievements';
 import Timeline from './components/Timeline';
@@ -26,7 +25,6 @@ function App() {
       <Nav />
       <main id="main-content">
         <Hero />
-        <About />
         <Timeline />
         <Projects />
         <Skills />

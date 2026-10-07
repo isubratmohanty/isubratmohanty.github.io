@@ -37,7 +37,7 @@
   background: rgba(34, 197, 94, 0.08);
   border: 1px solid rgba(34, 197, 94, 0.2);
   border-radius: 999px;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .hero__badge-dot {
@@ -87,6 +87,23 @@
   .hero__badge-dot {
     animation: none;
   }
+}
+
+/* ── Profile ── */
+.hero__profile-photo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+}
+
+.hero__profile-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 28px var(--accent-glow);
 }
 
 /* ── Name ── */
@@ -166,6 +183,35 @@
   font-style: normal;
   color: var(--text);
   font-weight: 500;
+}
+
+.hero__bio {
+  max-width: 590px;
+  margin: 0 auto 0.9rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.hero__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hero__meta svg {
+  color: var(--accent);
 }
 
 /* ── Pills ── */
@@ -317,6 +363,20 @@
 
   .hero__tagline {
     font-size: 0.95rem;
+  }
+
+  .hero__profile-photo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .hero__bio {
+    font-size: 0.9rem;
+  }
+
+  .hero__meta {
+    align-items: center;
+    flex-direction: column;
   }
 
   .hero__pill {

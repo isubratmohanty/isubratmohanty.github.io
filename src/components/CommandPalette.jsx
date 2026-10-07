@@ -3,7 +3,6 @@ import { useTheme } from '../context/ThemeContext';
 import './CommandPalette.css';
 
 const SECTIONS = [
-  { id: 'about', label: 'Go to About', icon: '>' },
   { id: 'experience', label: 'Go to Experience', icon: '>' },
   { id: 'projects', label: 'Go to Projects', icon: '>' },
   { id: 'skills', label: 'Go to Skills', icon: '>' },
