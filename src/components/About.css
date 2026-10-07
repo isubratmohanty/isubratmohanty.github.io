@@ -98,114 +98,6 @@
   50% { opacity: 0.4; }
 }
 
-/* ── Stats strip ── */
-.about__stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.about__stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  text-align: center;
-}
-
-.about__stat-icon {
-  font-size: 1.25rem;
-  color: var(--accent);
-  margin-bottom: 0.25rem;
-}
-
-.about__stat-number {
-  font-family: var(--font-mono);
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1;
-}
-
-.about__stat-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* ── Card grid ── */
-.about__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem;
-}
-
-.about__card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.75rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.about__card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.about__card:hover {
-  border-color: var(--accent-border-hover);
-  box-shadow: 0 8px 40px var(--accent-glow);
-}
-
-.about__card:hover::before {
-  opacity: 1;
-}
-
-.about__icon-wrap {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--accent-glow);
-  margin-bottom: 1rem;
-}
-
-.about__icon {
-  font-size: 1.2rem;
-  color: var(--accent);
-}
-
-.about__card h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0 0 0.6rem;
-}
-
-.about__card p {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--text-muted);
-  margin: 0;
-}
-
 /* ── Responsive ── */
 @media (max-width: 640px) {
   .about__intro {
@@ -217,17 +109,9 @@
   .about__meta {
     justify-content: center;
   }
-
-  .about__stats {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about__card:hover {
-    transform: none;
-  }
   .about__avail-dot {
     animation: none;
   }

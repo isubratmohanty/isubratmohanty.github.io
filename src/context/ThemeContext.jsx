@@ -55,7 +55,7 @@ function applyTheme(mode, accentKey) {
 }
 
 export function ThemeProvider({ children }) {
-  const [mode, setMode] = useState(() => localStorage.getItem('sm-mode') || 'light');
+  const [mode, setMode] = useState(() => localStorage.getItem('sm-mode') || 'dark');
   const [accentKey, setAccentKey] = useState(() => localStorage.getItem('sm-accent') || 'amber');
 
   useLayoutEffect(() => {

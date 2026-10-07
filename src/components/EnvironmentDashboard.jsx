@@ -137,13 +137,6 @@ export default function EnvironmentDashboard() {
             and incident-response signals. It is not production telemetry.
           </p>
         </div>
-        <div className="environment__disclaimer">
-          <span className="environment__disclaimer-dot" />
-          <div>
-            <strong>Fictional design exercise</strong>
-            <span>Deterministic sample values · no employer systems connected</span>
-          </div>
-        </div>
       </div>
 
       <EnvironmentControls
